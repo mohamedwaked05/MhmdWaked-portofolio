@@ -23,7 +23,7 @@ export function PhysioCore({ copy }) {
         <details className="product-preview">
           <summary>{copy.screenshotLabel}<span aria-hidden="true">+</span></summary>
           <figure>
-            <img src="/images/physiocore-home.jpg" alt={copy.screenshotAlt} width="1914" height="852" loading="lazy" decoding="async" />
+            <img src={`${import.meta.env.BASE_URL}images/physiocore-home.jpg`} alt={copy.screenshotAlt} width="1914" height="852" loading="lazy" decoding="async" />
             <figcaption>{copy.screenshotCaption}</figcaption>
           </figure>
         </details>

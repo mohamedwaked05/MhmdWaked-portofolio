@@ -49,7 +49,7 @@ function Introduction({ copy }) {
           <h1 id="intro-heading">{copy.headline[0]}<br /><em>{copy.headline[1]}</em><br />{copy.headline[2]}<span className="headline-stop">.</span></h1>
         </div>
         <div className="intro-aside">
-          <img src="/personalpic/moewaked.jpeg" alt={copy.photoAlt} className="profile-photo" />
+          <img src={`${import.meta.env.BASE_URL}personalpic/moewaked.jpeg`} alt={copy.photoAlt} className="profile-photo" />
           <span className="aside-rule" aria-hidden="true" />
           <p className="intro-greeting">{copy.greeting}</p>
           <div className="intro-description"><p>{copy.introduction}</p><p>{copy.introductionDetails}</p></div>
