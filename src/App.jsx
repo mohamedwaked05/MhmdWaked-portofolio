@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { content, profile } from './content'
 import Contact from './components/Contact'
-import { PhysioCore, Sou2AI } from './components/Projects'
+import { PhysioCore, Sou2AI, FixBeitak } from './components/Projects'
 import { Arrow, CvLinks } from './components/Shared'
 import './App.css'
 
@@ -72,10 +72,12 @@ function SelectedWork({ copy }) {
         <nav className="project-index" aria-label={copy.workIndex}>
           <a href="#physiocore"><span aria-hidden="true">01</span><bdi lang="en">PhysioCore</bdi><span className="index-status">{copy.project.status}</span><Arrow diagonal /></a>
           <a href="#sou2ai"><span aria-hidden="true">02</span><bdi lang="en">Sou2AI</bdi><span className="index-status">{copy.sou2ai.status}</span><Arrow diagonal /></a>
+          <a href="#fixbeitak"><span aria-hidden="true">03</span><bdi lang="en">Fix Beitak</bdi><span className="index-status">{copy.fixbeitak.status}</span><Arrow diagonal /></a>
         </nav>
       </div>
       <PhysioCore copy={copy.project} />
       <Sou2AI copy={copy.sou2ai} />
+      <FixBeitak copy={copy.fixbeitak} />
     </section>
   )
 }

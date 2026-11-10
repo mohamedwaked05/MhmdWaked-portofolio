@@ -4,6 +4,7 @@ import { ExternalLink, ProjectFacts, TechnicalNote } from './Shared'
 
 const physioTechnologies = ['Laravel', 'React', 'FastAPI / Python', 'PostgreSQL', 'Redis', 'Docker']
 const sou2aiTechnologies = ['Python', 'FastAPI', 'React', 'PostgreSQL / pgvector', 'SQL Server', 'Redis', 'Gemini', 'Docker']
+const fixbeitakTechnologies = ['HTML', 'CSS', 'JavaScript']
 
 export function PhysioCore({ copy }) {
   return (
@@ -36,6 +37,37 @@ export function PhysioCore({ copy }) {
           ))}
         </div>
         <TechnicalNote label={copy.builtWith} technologies={physioTechnologies} />
+      </div>
+    </article>
+  )
+}
+
+export function FixBeitak({ copy }) {
+  return (
+    <article id="fixbeitak" className="project project-fixbeitak" aria-labelledby="fixbeitak-title">
+      <div className="page-width">
+        <div className="project-grid">
+          <div className="project-intro">
+            <p className="project-category eyebrow">{copy.category}</p>
+            <h3 id="fixbeitak-title" dir="ltr">Fix Beitak<span className="project-period">.</span></h3>
+            <p className="project-subtitle">{copy.subtitle}</p>
+            <p className="project-summary">{copy.summary}</p>
+            <ProjectFacts copy={copy} />
+            <ExternalLink href="https://mohamedwaked05.github.io/protoype/" className="project-live">{copy.visit}</ExternalLink>
+          </div>
+          <figure className="fixbeitak-preview">
+            <div className="fixbeitak-frame">
+              <iframe
+                src="https://mohamedwaked05.github.io/protoype/"
+                title="Fix Beitak prototype"
+                loading="lazy"
+                aria-label={copy.subtitle}
+              />
+            </div>
+            <figcaption>{copy.subtitle}</figcaption>
+          </figure>
+        </div>
+        <TechnicalNote label={copy.builtWith} technologies={fixbeitakTechnologies} />
       </div>
     </article>
   )

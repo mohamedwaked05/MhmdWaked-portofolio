@@ -68,6 +68,11 @@ h1 em { font-weight: 400; color: var(--accent); }
 .project { padding-block: var(--space-7); border-top: var(--border); }
 .project-physiocore { background: var(--ivory); }
 .project-sou2ai { background: var(--sage); }
+.project-fixbeitak { background: var(--ivory); }
+.fixbeitak-preview { margin: 0; }
+.fixbeitak-frame { position: relative; width: 100%; padding-bottom: 62%; border-radius: 2px; overflow: hidden; border: var(--border); }
+.fixbeitak-frame iframe { position: absolute; inset: 0; width: 200%; height: 200%; transform: scale(.5); transform-origin: top left; border: none; pointer-events: none; }
+.fixbeitak-preview figcaption { margin-top: var(--space-2); font-size: .8rem; color: var(--muted); }
 .project-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.2fr); gap: clamp(var(--space-5), 5vw, var(--space-7)); align-items: center; }
 .project-category { color: var(--accent); margin-bottom: var(--space-3); }
 .project-intro h3 { font-family: var(--serif); font-size: clamp(4.5rem, 6.2vw, 6.5rem); font-weight: 500; line-height: 1; letter-spacing: -.045em; width: fit-content; }

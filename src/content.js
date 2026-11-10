@@ -3,8 +3,7 @@ export const profile = {
   phone: '+961 81 867 064',
   telephone: 'tel:+96181867064',
   whatsapp: 'https://wa.me/96181867064',
-  // Set this only after the supplied PDF is copied to public/documents/ and verified.
-  cvUrl: null,
+  cvUrl: `${import.meta.env.BASE_URL}documents/Mohamad-Waked_CV.pdf`,
   physiocore: 'https://physiocore.health',
   github: 'https://github.com/mohamedwaked05',
   linkedin: 'https://www.linkedin.com/in/mohamad-waked',
@@ -51,7 +50,7 @@ export const content = {
     },
     project: {
       sectionTitle: 'Selected work',
-      sectionNote: 'Two projects / from interface to implementation',
+      sectionNote: 'Three projects / from interface to implementation',
       category: '01 — Healthcare / Web application',
       subtitle: 'Rehabilitation, connected.',
       summary: 'An AI-powered telerehabilitation platform bringing injury assessment, pain analysis, and real-time communication into one web application.',
@@ -120,6 +119,17 @@ export const content = {
       progress: 'These capabilities are implemented. Sou2AI remains in development, with further development and testing ongoing.',
       builtWith: 'Built with',
     },
+    fixbeitak: {
+      category: '03 — Home services / UI prototype',
+      subtitle: 'A little care. A better home.',
+      summary: 'A landing page prototype for a home maintenance and repair service, designed around a simple and approachable user experience.',
+      roleLabel: 'Type',
+      role: 'UI / Frontend prototype',
+      statusLabel: 'Project status',
+      status: 'Prototype',
+      visit: 'View the prototype',
+      builtWith: 'Built with',
+    },
     contact: {
       sectionTitle: 'Correspondence',
       sectionNote: 'Contact & professional profiles',
@@ -171,7 +181,7 @@ export const content = {
     },
     project: {
       sectionTitle: 'أعمال مختارة',
-      sectionNote: 'مشروعان / من الواجهة إلى التنفيذ',
+      sectionNote: 'ثلاثة مشاريع / من الواجهة إلى التنفيذ',
       category: '٠١ — الرعاية الصحية / تطبيق ويب',
       subtitle: 'التأهيل عن بُعد، في منصة واحدة.',
       summary: 'منصة للتأهيل عن بُعد تستخدم الذكاء الاصطناعي، وتجمع تقييم الإصابات وتحليل الألم والتواصل الفوري في تطبيق ويب واحد.',
@@ -238,6 +248,17 @@ export const content = {
       implementation: 'يدعم PostgreSQL/pgvector استرجاع المستندات، ويُستخدم SQL Server للاستعلام عن بيانات العمل. ويشمل التطبيق Redis وDocker.',
       progressTitle: 'الوضع الحالي',
       progress: 'الإمكانات المذكورة منفّذة بالفعل. ما زال Sou2AI قيد التطوير، مع استمرار أعمال التطوير والاختبار.',
+      builtWith: 'التقنيات المستخدمة',
+    },
+    fixbeitak: {
+      category: '٠٣ — خدمات المنزل / نموذج واجهة',
+      subtitle: 'اهتمام بسيط. منزل أفضل.',
+      summary: 'نموذج صفحة هبوط لخدمة صيانة وإصلاح المنازل، مصمّم حول تجربة مستخدم بسيطة وسهلة.',
+      roleLabel: 'النوع',
+      role: 'نموذج واجهة أمامية',
+      statusLabel: 'حالة المشروع',
+      status: 'نموذج أولي',
+      visit: 'عرض النموذج',
       builtWith: 'التقنيات المستخدمة',
     },
     contact: {
